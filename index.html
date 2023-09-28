@@ -16,7 +16,9 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="/assets/css/styles.css" />
 
-    <title>Responsive Portfolio Website</title>
+    <link rel="icon" href="assets/img/icon.png" />
+
+    <title>Yahya - Portfolio</title>
   </head>
 
   <body>
@@ -102,7 +104,7 @@
               </a>
             </div>
 
-            <div class="home__img">
+            <div class="home__img floating">
               <svg
                 class="home__blob"
                 viewBox="0 0 200 187"
@@ -136,7 +138,9 @@
             </div>
 
             <div class="home__data">
-              <h1 class="home__title">Hi, I'am Yahya</h1>
+              <h1 class="home__title">
+                Hi, I'am <span id="typing-text"></span>
+              </h1>
               <h3 class="home__subtitle">Frontend Developer</h3>
               <p class="home__description">
                 High level experience in web design and knowledge, producing
@@ -395,7 +399,11 @@
               Education
             </div>
 
-            <div class="qualification__button button--flex" data-target="#work" style="display: none;">
+            <div
+              class="qualification__button button--flex"
+              data-target="#work"
+              style="display: none"
+            >
               <i class="uil uil-briefcase-alt qualification__icon"></i>
               Work
             </div>
@@ -708,7 +716,7 @@
             <!--==================== PORTFOLIO 1 ====================-->
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="/assets/img/portfolio1.jpg"
+                src="/assets/img/portfolio1.png"
                 alt=""
                 class="portfolio__img"
               />
@@ -716,10 +724,12 @@
               <div class="portfolio__data">
                 <h3 class="portfolio__title">Thrift Id</h3>
                 <p class="portfolio__description">
-                  Thrift-Id: Elevating E-Commerce with Unparalleled Shopping Experiences.
+                  Thrift-Id: Elevating E-Commerce with Unparalleled Shopping
+                  Experiences.
                 </p>
                 <a
                   href="https://www.thrift-id.com/"
+                  target="_blank"
                   class="button button--flex button--small portfolio__button"
                 >
                   Demo
@@ -810,7 +820,7 @@
       <!--==================== TESTIMONIAL ====================-->
       <section class="testimonial section">
         <h2 class="section__title">Testimonial</h2>
-        <span class="section__subtitle">My client saying</span>
+        <span class="section__subtitle">My friends saying</span>
 
         <div class="testimonial__container container swiper-container">
           <div class="swiper-wrapper">
@@ -825,8 +835,8 @@
                   />
 
                   <div>
-                    <h3 class="testimonial__name">Sara Smith</h3>
-                    <span class="testimonial__client">Client</span>
+                    <h3 class="testimonial__name">Zaheed</h3>
+                    <span class="testimonial__client">Friend</span>
                   </div>
                 </div>
 
@@ -856,8 +866,8 @@
                   />
 
                   <div>
-                    <h3 class="testimonial__name">Sara Smith</h3>
-                    <span class="testimonial__client">Client</span>
+                    <h3 class="testimonial__name">Sapwan</h3>
+                    <span class="testimonial__client">Friend</span>
                   </div>
                 </div>
 
@@ -887,8 +897,8 @@
                   />
 
                   <div>
-                    <h3 class="testimonial__name">Sara Smith</h3>
-                    <span class="testimonial__client">Client</span>
+                    <h3 class="testimonial__name">Faiq</h3>
+                    <span class="testimonial__client">Friend</span>
                   </div>
                 </div>
 
@@ -947,27 +957,33 @@
             </div>
           </div>
 
-          <form action="" class="contact__from grid">
+          <form
+            action="https://formspree.io/f/mdorpnne"
+            method="POST"
+            class="contact__from grid"
+          >
             <div class="contact__inputs grid">
-              <div class="contact__content">
-                <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input" />
-              </div>
+              <div class="contact__double">
+                <div class="contact__content">
+                  <label for="" class="contact__label">Name</label>
+                  <input type="text" name="name" class="contact__input" />
+                </div>
 
-              <div class="contact__content">
-                <label for="" class="contact__label">Email</label>
-                <input type="email" class="contact__input" />
+                <div class="contact__content">
+                  <label for="" class="contact__label">Email</label>
+                  <input type="email" name="email" class="contact__input" />
+                </div>
               </div>
 
               <div class="contact__content">
                 <label for="" class="contact__label">Project</label>
-                <input type="text" class="contact__input" />
+                <input type="text" name="message" class="contact__input" />
               </div>
 
               <div class="contact__content">
                 <label for="text" class="contact__label">Message</label>
                 <textarea
-                  name=""
+                  name="message"
                   id=""
                   cols="0"
                   rows="7"
@@ -975,12 +991,20 @@
                 ></textarea>
               </div>
 
-              <div>
-                <a href="#" class="button button--flex">
+              <button
+                style="
+                  border: none;
+                  display: flex;
+                  font-family: Poppins, sans-serif;
+                  font-size: 1rem;
+                  background-color: transparent;
+                "
+              >
+                <a class="button button--flex" type="submit">
                   Send Message
                   <i class="uil uil-message button__icon"></i>
                 </a>
-              </div>
+              </button>
             </div>
           </form>
         </div>
@@ -1012,7 +1036,7 @@
 
           <div class="footer__socials">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/profile.php?id=100034201756468"
               target="_blank"
               class="footer__social"
             >
@@ -1020,7 +1044,7 @@
             </a>
 
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/yahymhmmd"
               target="_blank"
               class="footer__social"
             >
@@ -1028,7 +1052,7 @@
             </a>
 
             <a
-              href="https://twitter.com/"
+              href="https://twitter.com/cl0udymoody_"
               target="_blank"
               class="footer__social"
             >
