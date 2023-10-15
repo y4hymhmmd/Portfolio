@@ -513,19 +513,19 @@ img {
 }
 
 .skills__html {
-  width: 90%;
-}
-
-.skills__css {
   width: 80%;
 }
 
-.skills__js {
+.skills__css {
   width: 75%;
 }
 
+.skills__js {
+  width: 60%;
+}
+
 .skills__react {
-  width: 50%;
+  width: 20%;
 }
 
 .skills__sql {
