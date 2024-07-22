@@ -247,6 +247,6 @@ function eraseText() {
 // Mulai dengan mengetikkan teks pertama
 setTimeout(typeNextCharacter, 1000); // Tunggu 1 detik sebelum memulai pengetikan
 
-while (true) {
-    console.log("hello word");
-}
+// while (true) {
+//     console.log("hello word");
+// }
